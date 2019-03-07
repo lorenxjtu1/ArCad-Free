@@ -54,28 +54,45 @@ body{
     background-color: gray;
     border-style: solid;
     border-radius: 40px;
+    z-index: 1;
+}
+#img2{
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+    height: 600px;
+    opacity: 0.5;
+    background-color: black;
+    border-style: solid;
+    border-radius: 40px;
+    z-index: 1;
 }
 #editorLink{
     position: absolute;
-    top: 35%;
-    left: 38%;
+    top: 200px;
+    left: 250px;
+    z-index: 2;
+    font-size: 100px;
+    text-decoration: none;
+    color: black
+}
+#viewerLink{
+    position: absolute;
+    top: 200px;
+    left: 250px;
     z-index: 2;
     font-size: 100px;
     text-decoration: none;
     color: black
 }
 #editorLink:hover + #img1{
-    opacity: 0.2;
+    opacity: 2;
 }
-#img2{
-    margin-right: 0;
-    padding-right: 0;
 
-    
-    background-color: red;
-    border-style: solid;
-    border-radius: 40px;
+#viewerLink:hover + #img2{
+    opacity: 0.8;
 }
+
 
 /* content */
 
@@ -96,6 +113,10 @@ body{
 #learnOpt{
     font-size: 30px;
 }
+.hide{
+    display: none;
+}
+
 /* editor */
 .btn{
 
@@ -120,17 +141,58 @@ body{
 #textLearn{
    display: none;
 }
-/* controls */
-#controls{
-    
+#learnOpt{
+    margin-top: 20px;
 }
+.btOpt{
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+}
+
+#viewerToolbar{
+    margin-bottom: 200px;
+}
+/* controls */
+
 #imgControls{
     display: none;
     position: absolute;
     top: 120px;
     left: 320px;
+    animation: moveAnim 2.5s linear ;
+    -webkit-animation: moveAnim 2.5s linear ;
+
+    animation-timing-function: ease-in-out;
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-play-state: paused;
+    -webkit-animation-iteration-count: infinite;
+
+    
+    z-index: 2;
+}
+#auxImg{
+    z-index: 1;
+}
+#keybindings{
+   width: 300px;
+   height: 200px;
+   margin-left: 100px;
+    
+
+}
+#bindings{
+    margin-right: 500px;
+    font-size: 30px;
 }
 
+#warning{
+    font-size: 30px;
+    margin-top: 60px;
+}
 
 #footer{
     margin: 0;
@@ -138,13 +200,26 @@ body{
 #copyright{
     margin-top: 20px;
 }
+
 /** ---responsiveness----*/
 @media (min-width: 576px){
 
+@keyframes moveAnim {
+    from {top: 120px;
+        left: 320px;}
+    to {top: 180px;
+        left: 430px;}
+}
+  
+@media (min-width: 576px){
+    #imgMobile{
+        display: none;
+    }
     .jumbotron {
         padding-top: 2rem;
         padding-bottom: 0;
     }
+
 
     .menu{
         position: absolute;
@@ -154,5 +229,40 @@ body{
         background:#fff;
         justify-content: space-evenly;
         margin-top:12px;
+
+}
+
+@media (max-width: 576px){
+  
+    #logoImg{
+        width: 90%;
+    }
+    #img2Div{
+        display: none;
+    }
+    #img2{
+        margin-left: 45px;
+    }
+   
+    #viewerLink{
+        top: 500px;
+        left: 100px;
+        font-size: 80px;
+    }
+    #img1Div{
+        display: none;
+    }
+    #imgIntro{
+        width: 100%;
+    }
+    #learn{
+        display: none;  
+    }
+    #imgMobile{
+        display: block;
+    }
+    #warning{
+        font-size: 20px;
+
     }
 }
