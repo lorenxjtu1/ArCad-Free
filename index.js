@@ -88,6 +88,23 @@ function showPreview(){
     document.getElementById("imgControls").style.animationPlayState = "running";
     document.getElementById("imgControls").style.webkitAnimationPlayState = "running";
 }
+function showPreview2(){
+    stopEffects();
+    document.getElementById('grid').style.display = "none";
+    document.getElementById("textLearn").textContent = "View the animation in AR.";
+    
+    document.getElementById("imgControls").src = root + "cube.png";
+    let auxImg = document.getElementById("auxImg");
+    auxImg.style.display = "block";
+    auxImg.src = root + "smart.png";
+    auxImg.style.position = "absolute";
+    auxImg.style.top = "120px";
+    auxImg.style.left = "380px";
+    document.getElementById("imgControls").style.animation = '';
+    document.getElementById("imgControls").style.webkitAnimation = '';
+    document.getElementById("imgControls").style.animationPlayState = "running";
+    document.getElementById("imgControls").style.webkitAnimationPlayState = "running";
+}
 
 function showExport(){
     stopEffects();
@@ -133,4 +150,20 @@ function showViewer(){
     auxImg.style.position = "absolute";
     auxImg.style.top = "100px";
     auxImg.style.left = "300px";
+}
+
+function showEditorLearn(){
+    document.getElementById('grid').style.display = "block";
+    document.getElementById('viewerToolbar').style.display = "none";
+    document.getElementById('editorToolbar').style.display = "block";
+    document.getElementById('demonstrateArea').style.display = "block";
+}
+
+function showViewerLearn(){
+    document.getElementById('grid').style.display = "none";
+    document.getElementById('editorToolbar').style.display = "none";
+    document.getElementById('viewerToolbar').style.display = "block";
+    document.getElementById('demonstrateArea').style.display = "block";
+
+    showImport();
 }

@@ -28,19 +28,24 @@
            
         </div>
         <div id="initialPage"  class="row" >
+
+                <div id="imgMobile" >
+                    <a id="viewerLink"href="viewer/viewer2.html" >Viewer</a>
+                    <img id="img2" src="misc/imgs/gifViewerMobile.gif">
+                </div>
             
                 <div class="col text-center" >
-                
-                    <div id="img1" class="row">
+                    <div id="img1Div" class="row">
                         <a id="editorLink" href="editor/editor.html" >Editor</a>
                         <img id="img1" src="misc/imgs/gifEditor.gif">
                     </div>
-                   
                 </div>
             
                 <div class="col text-center">
-                    <a href="viewer/viewer2.html" >Viewer</a>
-                    <div id="img2"></div>
+                    <div id="img2Div" class="row">
+                        <a id="viewerLink"href="viewer/viewer2.html" >Viewer</a>
+                        <img id="img2" src="misc/imgs/gifViewerDesktop.gif">
+                    </div>
                 </div>
         </div>
 
@@ -48,7 +53,7 @@
         <div id="content" class="row">
             <div id="textIntro" class="col text-center">
                 <p>ArCad is a keyframe <span style="color: green">Editor</span> and a <span style="color: green">AR Viewer</span> for your 3D Models. <br>Import, edit keyframes and visualize.</p>
-                <img src="misc/imgs/content.png">
+                <img id="imgIntro" src="misc/imgs/content.png">
             </div>
         </div>
 
@@ -58,12 +63,17 @@
                     <p>Learn how to use it</p>
                 </div>
                 <div id="learnOpt" class="row">
-                    <div id="learEditor" class="col text-right btOpt" onclick="">Editor</div>
-                    <div id="learViewer" class="col btOpt" >Viewer</div>
+                    <div class="col text-right" >
+                        <button id="learEditor" class=" btOpt" onclick="showEditorLearn()">Editor</button>
+                    </div>
+                    
+                    <div class="col">
+                        <button id="learViewer" class="btOpt" onclick="showViewerLearn()">Viewer</button>
+                    </div>
                 </div>
                 <div id="learnContent"class="row">
                     <div id="learnMenus" class="col">
-                        <div id="editorToolbar" class="col text-center">
+                        <div id="editorToolbar" class="col text-center hide">
                             <div class="row justify-content-center">
                                 <button type="button" class="btn marginBT dropdown-toggle" data-toggle="tooltip" data-placement="right" title="Controls" onclick="showControls()">
                                     <img id="imgBtLoad" class="imgBT" src="misc/imgs/move.png"/>
@@ -101,28 +111,49 @@
                             </div>
 
                         </div>
-                    </div>
 
-                    <div id="demonstrate"class="col">
-                        <div id="demonstrateEditor" class="text-center">
-                            <p id="textLearn"></p>
-                            <img id="imgControls" >      
-                            <img id="auxImg" >  
-                            <div id="grid">
-                                <img src="misc/imgs/grid.png">
+                        <div id="viewerToolbar" class="col text-center hide">
+                            <div class="row justify-content-center">
+                                <button type="button" class="btn marginBT dropdown-toggle" data-toggle="tooltip" data-placement="right" title="Load" onclick="showImport()">
+                                    <img id="imgBtLoad" class="imgBT" src="misc/imgs/load.png"/>
+                                </button>
                             </div>
-                           
+
+                            <div class="row justify-content-center">
+                                <button type="button" class="btn marginBT row"data-toggle="tooltip" data-placement="right" title="Preview" onclick="showPreview2()"> 
+                                    <img id="imgBtPreview"  class="imgBT" src="misc/imgs/preview.png">
+                                </button>
+                            </div>
 
                         </div>
                     </div>
+
+                    <div id="demonstrate"class="col">
+                        <div id="demonstrateArea" class="text-center hide">
+                            <p id="textLearn"></p>
+                            <img id="imgControls" >      
+                            <img id="auxImg" >  
+                            <div id="grid" >
+                                <img src="misc/imgs/grid.png">
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
+        </div>
+        
+        <div id="warning" class="row">
+            <div class="col text-center">
+                <p>This project still in development!<br> If you find any bug, errors or have a suggestion leave a issue at: <br><a href="https://github.com/Carnaux/WEB-AR-CAD-VIEWER/issues">https://github.com/Carnaux/WEB-AR-CAD-VIEWER/issues</a></p>
+            </div>
+           
         </div>
     </div>
 
 
     <div id="footer" class="row jumbotron jumbotron-fluid">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row ">
                 <div class="col text-center">
                     <p>More about and more projects at:</p>

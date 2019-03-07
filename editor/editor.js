@@ -226,16 +226,19 @@ function onkeydown(event){
       case 88: // X
           control.showX = ! control.showX;
           control.showZ = ! control.showZ;
+          control.showY = true;
           break;
 
       case 67: // c
           control.showX = ! control.showX;
           control.showY = ! control.showY;
+          control.showZ = true;
           break;
 
       case 90: // Z
           control.showZ = ! control.showZ;
           control.showY = ! control.showY;
+          control.showX = true;
           break;
 
       case 32: // Spacebar
