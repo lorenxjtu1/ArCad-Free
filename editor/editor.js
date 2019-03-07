@@ -1,5 +1,7 @@
 var scene, camera, renderer, orbit, control, gridHelper;
 
+var map = []; 
+
 var objects = [];
 
 var lastSelected;
@@ -189,27 +191,25 @@ function menuState(n){
 
 }
 
+
+
+
 function onkeydown(event){
     switch ( event.keyCode ) {
 
-      case 81: // Q
-          control.setSpace( control.space === "local" ? "world" : "local" );
-          break;
+     
 
-      case 17: // Ctrl
-          control.setTranslationSnap( 100 );
-          control.setRotationSnap( THREE.Math.degToRad( 15 ) );
-          break;
+      
 
-      case 87: // W
+      case 81: // q
           control.setMode( "translate" );
           break;
 
-      case 69: // E
+      case 87: // w
           control.setMode( "rotate" );
           break;
 
-      case 82: // R
+      case 69: // e
           control.setMode( "scale" );
           break;
 
@@ -225,14 +225,17 @@ function onkeydown(event){
 
       case 88: // X
           control.showX = ! control.showX;
+          control.showZ = ! control.showZ;
           break;
 
-      case 89: // Y
+      case 67: // c
+          control.showX = ! control.showX;
           control.showY = ! control.showY;
           break;
 
       case 90: // Z
           control.showZ = ! control.showZ;
+          control.showY = ! control.showY;
           break;
 
       case 32: // Spacebar

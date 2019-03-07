@@ -102,8 +102,23 @@ body{
     position: absolute;
     top: 120px;
     left: 320px;
-}
+    animation: moveAnim 2.5s linear ;
+    -webkit-animation: moveAnim 2.5s linear ;
 
+    animation-timing-function: ease-in-out;
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-play-state: paused;
+    -webkit-animation-iteration-count: infinite;
+
+    
+    z-index: 2;
+}
+#auxImg{
+    z-index: 1;
+}
 
 #footer{
     margin: 0;
@@ -111,6 +126,14 @@ body{
 #copyright{
     margin-top: 20px;
 }
+
+@keyframes moveAnim {
+    from {top: 120px;
+        left: 320px;}
+    to {top: 180px;
+        left: 430px;}
+}
+  
 @media (min-width: 576px){
 
     .jumbotron {

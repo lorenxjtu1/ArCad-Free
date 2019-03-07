@@ -58,8 +58,8 @@
                     <p>Learn how to use it</p>
                 </div>
                 <div id="learnOpt" class="row">
-                    <div id="learEditor" class="col text-right">Editor</div>
-                    <div id="learViewer" class="col">Viewer</div>
+                    <div id="learEditor" class="col text-right btOpt" onclick="">Editor</div>
+                    <div id="learViewer" class="col btOpt" >Viewer</div>
                 </div>
                 <div id="learnContent"class="row">
                     <div id="learnMenus" class="col">
@@ -77,25 +77,25 @@
                             </div>
 
                             <div class="row justify-content-center">
-                                <button type="button" class="btn marginBT row" onclick="preview()" data-toggle="tooltip" data-placement="right" title="Preview"> 
+                                <button type="button" class="btn marginBT row"data-toggle="tooltip" data-placement="right" title="Preview" onclick="showPreview()"> 
                                     <img id="imgBtPreview"  class="imgBT" src="misc/imgs/preview.png">
                                 </button>
                             </div>
 
                             <div class="row justify-content-center">
-                                <button type="button" class="btn marginBT dropdown-toggle"  data-toggle="tooltip" data-placement="right" title="Export">
+                                <button type="button" class="btn marginBT dropdown-toggle"  data-toggle="tooltip" data-placement="right" title="Export" onclick="showExport()">
                                     <img id="imgBtLoad" class="imgBT" src="misc/imgs/export.png"/>
                                 </button>
                             </div>
 
                             <div class="row justify-content-center">
-                                <button type="button" class="btn marginBT dropdown-toggle" data-toggle="tooltip" data-placement="right" title="Load">
+                                <button type="button" class="btn marginBT dropdown-toggle" data-toggle="tooltip" data-placement="right" title="Load" onclick="showImport()">
                                     <img id="imgBtLoad" class="imgBT" src="misc/imgs/load.png"/>
                                 </button>
                             </div>
 
                             <div class="row justify-content-center">
-                                <button type="button" class="btn marginBT row" onclick="goToViewer()" data-toggle="tooltip" data-placement="right" title="Viewer"> 
+                                <button type="button" class="btn marginBT row" data-toggle="tooltip" data-placement="right" title="Viewer" onclick="showViewer()"> 
                                     <img id="imgBtPreview"  class="imgBT" src="misc/imgs/smartphone.png">
                                 </button>
                             </div>
