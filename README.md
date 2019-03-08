@@ -7,7 +7,7 @@ This project still in development, if you find any bugs or erros, please, open a
 
 The marker that the viewer use is the Hiro Marker.
 
-![alt text](https://github.com/Carnaux/WEB-AR-CAD-VIEWER/blob/master/misc/imgs/hiro.png "Hiro Marker")
+![alt text](https://github.com/Carnaux/WEB-AR-CAD-VIEWER/blob/master/src/imgs/hiro.png "Hiro Marker")
 
 ## Updates
 - March 2019: Alpha Release
@@ -21,6 +21,7 @@ The marker that the viewer use is the Hiro Marker.
 | March 2019 | Alpha Release                |  100% |
 | -          | -                |  -    |
 
+## Architecture
 
 
 # Development Guidelines
