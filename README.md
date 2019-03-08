@@ -23,4 +23,7 @@ The marker that the viewer use is the Hiro Marker.
 | -          | -                |  -    |
 
 
-
+## Credits / OpenSource attribuitons
+### Icons and other visual Assets
+- all icons used in this project come from ![theNounProject](https://thenounproject.com)
+- 

@@ -1,29 +1,33 @@
 body{
     margin: 0;
     overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .menu{
     position: absolute;
     top:0;
     display:flex;
-    width: 100%;
+    width: 50%;
     background:#fff;
     justify-content: space-evenly;
     margin-top:12px;
+    min-width: 400px;
 }
 
 .menu a{
     color:#555;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 10pt;
+    font-size: 8pt;
+    border-bottom: solid 1px transparent;
+    transition: 0.6s;
 }
 
 .menu a:hover{
     color:#000;
     cursor: default;
-   
+    border-bottom: solid 1px #000;
 }
 
 .containter-fluid{
@@ -36,15 +40,97 @@ body{
     top: 100px;
     left: 0; */
 }
-#title{
-    /* background-color: rgb(221, 221, 221) */
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
-#
-#logoImg{
-    width: 650px;
-    margin-left: 50px;
+
+#title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    
 }
+
+#title > .main-logo{
+    animation: fadein 1.5s;
+}
+
+#title > h1{
+    animation-delay: 1.5s;
+    animation: fadein 3s;
+}
+
+#title > .content{
+    animation-delay: 1s;
+    font-weight: 100;
+    line-height: 14pt;
+    font-size: 11pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 70%;
+    min-width: 450px;
+    text-align: justify;
+}
+
+#title .main-text{
+    font-size: 16pt;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 20pt;
+    margin-top: 12pt;
+    margin-bottom:12pt;
+}
+
+#title button{
+    background: #F5F5F5;
+    border: none;
+    box-shadow: 0 4px 6px  rgba(0,0,0,0.1);
+    transition: 1s;
+}
+
+#title button:hover{
+    background: #F5F5F5;
+    border: none;
+    box-shadow: 0 6px 6px  rgba(0,0,0,0.25);
+}
+
+.get-started-button{
+    color:#fff;
+    font-size: 14pt;
+    background: #00B655 !important;
+    padding: 12px 26px 12px 26px;
+    /* border: solid 2px #B2EE61 !important; */
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.get-started-button:hover{
+    color:#fff;
+    font-size: 14pt;
+    background: rgb(11, 192, 95) !important;
+    padding: 12px 26px 12px 26px;
+    /* border: solid 2px #B2EE61 !important; */
+    border-radius: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0 0px 6px  #7AD832 !important;
+}
+
+.main-logo{
+    width: 25%;
+    object-fit: contain;
+    max-width: 200px;
+    min-width: 100px;
+}
+
 #img1{
     margin-left: 0;
     padding-left: 0;
@@ -264,5 +350,38 @@ body{
     #warning{
         font-size: 20px;
 
+    }
+}
+
+/*-- github corner --*/
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+
+    0%,
+    100% {
+        transform: rotate(0)
+    }
+
+    20%,
+    60% {
+        transform: rotate(-25deg)
+    }
+
+    40%,
+    80% {
+        transform: rotate(10deg)
+    }
+}
+
+@media (max-width:500px) {
+    .github-corner:hover .octo-arm {
+        animation: none
+    }
+
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out
     }
 }
