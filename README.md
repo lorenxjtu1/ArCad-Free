@@ -16,12 +16,48 @@ The marker that the viewer use is the Hiro Marker.
 -
 
 ## Milestones
-
 | Date       |      features                |  state |
 |------------|:----------------------------:|:-----:|
 | March 2019 | Alpha Release                |  100% |
 | -          | -                |  -    |
 
+
+
+# Development Guidelines
+## Running local instance
+```npm
+cd ./app/
+npm install 
+npm start
+```
+
+## Building
+```npm
+npm run build
+```
+
+## Architecture
+```js
+/app/
+    src/
+        .babelrc /*babel compile configuration*/
+        index.js /*main entry point*/
+        config.json /* all high-level info */
+        views/ /*all .html and .css*/
+            css/
+        commons/ /*all generic algorithms*/
+
+    dist/ /*compiled version of the code*/
+
+```
+
+## React Components
+* Menu
+* Viewer3D
+* AnimationMenu
+
+# Milestones
+* integrate with react
 
 ## Credits / OpenSource attribuitons
 ### Icons and other visual Assets
