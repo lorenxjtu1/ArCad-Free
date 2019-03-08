@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<title>ArCad-Viewer</title>
+<link type="text/css" rel="stylesheet" href="../libs/bootstrap/bootstrap.css"/>
+<link type="text/css" rel="stylesheet" href="viewerStyle.css"/>
+<!-- three.js library -->
+
+<script type="text/javascript" src="../libs/bootstrap/jquery.js"></script>
+<script type="text/javascript" src="../libs/bootstrap/popper.js"></script>
+<script type="text/javascript" src="../libs/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="../libs/three/three.js"></script>
+<script type="text/javascript" src="./data/arjs/ar.js"></script>
+<script type="text/javascript" src="../libs/three/pathFollower.js"></script>
+<script type="text/javascript" src="../libs/three/geoFile.js"></script>
+<script type="text/javascript" src="viewer.js"></script>
+
+<body style='margin : 0px; overflow: hidden; font-family: Monospace;' >
+    
+    <div id="viewer" class="row">
+
+        <div id="toolbarViewerDesktop" class="col">
+
+            <input type="file" id="selectedFileMobile" style="display: none;" onchange="onChooseFile(event, onModelLoadViewer.bind(this))" />
+            <button type="button" class="btn btn-secondary  btn-lg marginBT row"  onclick="document.getElementById('selectedFileMobile').click();">
+                <img id="imgBtLoadLG" class="imgBT" src="../misc/imgs/load.png"/>
+            </button>
+            
+            
+            <button type="button" class="btn btn-secondary marginBT row" onclick="previewer()"> <img id="imgBtPreviewLG"  class="imgBT" src="../misc/imgs/preview.png"></button>
+            
+            <button type="button" class="btn btn-secondary marginBT row" onclick="goToEditor()"> <img id="imgBtPreviewLG"  class="imgBT" src="../misc/imgs/3d.png"></button>
+        </div>
+
+        <div id="toolbarViewerMobile" class="col">
+            <div class="row">
+                <input type="file" id="selectedFileMobile" style="display: none;" onchange="onChooseFile(event, onModelLoadViewer.bind(this))" />
+                <button type="button" class="btn btn-secondary  btn-lg" onclick="document.getElementById('selectedFileMobile').click();">
+                    <img id="imgBtLoadLG" class="imgBT" src="../misc/imgs/load.png"/>
+                </button>
+
+                <button type="button" class="btn btn-secondary " onclick="previewer()"> <img id="imgBtPreviewLG"  class="imgBT" src="../misc/imgs/preview.png"></button>
+            </div>
+        </div>
+    </div>
+    
+  
+    
+
+</body>
