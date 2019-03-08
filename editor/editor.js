@@ -245,6 +245,14 @@ function onkeydown(event){
           control.enabled = ! control.enabled;
           break;
 
+      case 75: // k
+          saveKeyframe();
+          break;
+          
+      case 80:
+          preview();
+          break;
+
     }
 }
 

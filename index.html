@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
     crossorigin="anonymous">
-    <link type="text/css" rel="stylesheet" href="misc/bootstrap.css"/>
+    <link type="text/css" rel="stylesheet" href="libs/bootstrap/bootstrap.css"/>
     <link type="text/css" rel="stylesheet" href="style.css"/>
 </head>
 <body style='margin : 0px;'>
@@ -18,7 +18,7 @@
         <div id="title" class="row" >
             <div class="col">
                 <div class="row justify-content-center">
-                    <img id="logoImg"  src="misc/imgs/logo.png">
+                    <img id="logoImg"  src="src/imgs/logo.png">
                 </div>
                 <div class="row text-right">
                     <p class="col">Alpha 0.1</p>
@@ -30,21 +30,21 @@
         <div id="initialPage"  class="row" >
 
                 <div id="imgMobile" >
-                    <a id="viewerLink"href="viewer/viewer2.html" >Viewer</a>
-                    <img id="img2" src="misc/imgs/gifViewerMobile.gif">
+                    <a id="viewerLink"href="viewer/viewer.html" >Viewer</a>
+                    <img id="img2" src="src/imgs/gifViewerMobile.gif">
                 </div>
             
                 <div class="col text-center" >
                     <div id="img1Div" class="row">
                         <a id="editorLink" href="editor/editor.html" >Editor</a>
-                        <img id="img1" src="misc/imgs/gifEditor.gif">
+                        <img id="img1" src="src/imgs/gifEditor.gif">
                     </div>
                 </div>
             
                 <div class="col text-center">
                     <div id="img2Div" class="row">
-                        <a id="viewerLink"href="viewer/viewer2.html" >Viewer</a>
-                        <img id="img2" src="misc/imgs/gifViewerDesktop.gif">
+                        <a id="viewerLink"href="viewer/viewer.html" >Viewer</a>
+                        <img id="img2" src="src/imgs/gifViewerDesktop.gif">
                     </div>
                 </div>
         </div>
@@ -53,7 +53,7 @@
         <div id="content" class="row">
             <div id="textIntro" class="col text-center">
                 <p>ArCad is a keyframe <span style="color: green">Editor</span> and a <span style="color: green">AR Viewer</span> for your 3D Models. <br>Import, edit keyframes and visualize.</p>
-                <img id="imgIntro" src="misc/imgs/content.png">
+                <img id="imgIntro" src="src/imgs/content.png">
             </div>
         </div>
 
@@ -76,37 +76,37 @@
                         <div id="editorToolbar" class="col text-center hide">
                             <div class="row justify-content-center">
                                 <button type="button" class="btn marginBT dropdown-toggle" data-toggle="tooltip" data-placement="right" title="Controls" onclick="showControls()">
-                                    <img id="imgBtLoad" class="imgBT" src="misc/imgs/move.png"/>
+                                    <img id="imgBtLoad" class="imgBT" src="src/icons/move.png"/>
                                 </button>
                             </div>
 
                             <div class="row justify-content-center">
                                 <button type="button" class="btn marginBT row" data-toggle="tooltip" data-placement="right" title="Keyframe" onclick="showKeyframe()">
-                                    <img id="imgBtPreview"  class="imgBT" src="misc/imgs/keyframe.png">
+                                    <img id="imgBtPreview"  class="imgBT" src="src/icons/keyframe.png">
                                 </button>
                             </div>
 
                             <div class="row justify-content-center">
                                 <button type="button" class="btn marginBT row"data-toggle="tooltip" data-placement="right" title="Preview" onclick="showPreview()"> 
-                                    <img id="imgBtPreview"  class="imgBT" src="misc/imgs/preview.png">
+                                    <img id="imgBtPreview"  class="imgBT" src="src/icons/preview.png">
                                 </button>
                             </div>
 
                             <div class="row justify-content-center">
                                 <button type="button" class="btn marginBT dropdown-toggle"  data-toggle="tooltip" data-placement="right" title="Export" onclick="showExport()">
-                                    <img id="imgBtLoad" class="imgBT" src="misc/imgs/export.png"/>
+                                    <img id="imgBtLoad" class="imgBT" src="src/icons/export.png"/>
                                 </button>
                             </div>
 
                             <div class="row justify-content-center">
                                 <button type="button" class="btn marginBT dropdown-toggle" data-toggle="tooltip" data-placement="right" title="Load" onclick="showImport()">
-                                    <img id="imgBtLoad" class="imgBT" src="misc/imgs/load.png"/>
+                                    <img id="imgBtLoad" class="imgBT" src="src/icons/load.png"/>
                                 </button>
                             </div>
 
                             <div class="row justify-content-center">
                                 <button type="button" class="btn marginBT row" data-toggle="tooltip" data-placement="right" title="Viewer" onclick="showViewer()"> 
-                                    <img id="imgBtPreview"  class="imgBT" src="misc/imgs/smartphone.png">
+                                    <img id="imgBtPreview"  class="imgBT" src="src/icons/smartphone.png">
                                 </button>
                             </div>
 
@@ -115,32 +115,52 @@
                         <div id="viewerToolbar" class="col text-center hide">
                             <div class="row justify-content-center">
                                 <button type="button" class="btn marginBT dropdown-toggle" data-toggle="tooltip" data-placement="right" title="Load" onclick="showImport()">
-                                    <img id="imgBtLoad" class="imgBT" src="misc/imgs/load.png"/>
+                                    <img id="imgBtLoad" class="imgBT" src="src/icons/load.png"/>
                                 </button>
                             </div>
 
                             <div class="row justify-content-center">
                                 <button type="button" class="btn marginBT row"data-toggle="tooltip" data-placement="right" title="Preview" onclick="showPreview2()"> 
-                                    <img id="imgBtPreview"  class="imgBT" src="misc/imgs/preview.png">
+                                    <img id="imgBtPreview"  class="imgBT" src="src/icons/preview.png">
                                 </button>
                             </div>
 
                         </div>
                     </div>
 
-                    <div id="demonstrate"class="col">
+                    <div id="demonstrate"class="col text-right">
                         <div id="demonstrateArea" class="text-center hide">
                             <p id="textLearn"></p>
-                            <img id="imgControls" >      
-                            <img id="auxImg" >  
-                            <div id="grid" >
-                                <img src="misc/imgs/grid.png">
+                            <img id="imgControls">      
+                            <img id="auxImg">  
+                            <img id="auxImg2">  
+                            <div id="grid">
+                                <img src="src/imgs/grid.png">
                             </div>
                         </div>
                         
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div id="mobileWarning" class="row">
+            <div class="col text-center">
+                <p style="color: green; font-size:30px;">You are in the mobile version, so you only have access to the Viewer,<br> to use the Editor go to the Desktop version.</p>
+            </div>
+        </div>
+
+        <div id="marker" class="row ">
+            <div class="col">
+                <div class="row"><p class="col text-center">The marker for the AR visualization is the Hiro Marker. Download and print it, or use a screen!</p></div>
+                <div class="row ">
+                    <div class="col text-center">
+                        <img id="markerImg"  src="src/imgs/hiro.png">
+                    </div>
+                    
+                </div>
+            </div>
+          
         </div>
         
         <div id="warning" class="row">
@@ -164,9 +184,9 @@
         </div>
     </div>
 
-    <script type="text/javascript" src="misc/jquery.js"></script>
-    <script type="text/javascript" src="misc/popper.js"></script>
-    <script type="text/javascript" src="misc/bootstrap.js"></script>
+    <script type="text/javascript" src="libs/bootstrap/jquery.js"></script>
+    <script type="text/javascript" src="libs/bootstrap/popper.js"></script>
+    <script type="text/javascript" src="libs/bootstrap/bootstrap.js"></script>
     <script type="text/javascript" src="index.js"></script>
     <script>
         $(function () {
