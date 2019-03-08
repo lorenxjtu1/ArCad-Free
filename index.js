@@ -2,13 +2,15 @@ let interval;
 let currentImg = 1;
 
 
-let root = "misc/imgs/";
+let root = "src/imgs/";
 let srcArr = [];
 
 function reset(){
+    document.getElementById("textLearn").textContent = "";
     document.getElementById("textLearn").style.display = "block";
     document.getElementById("imgControls").style.display = "block";
     document.getElementById("auxImg").style.display = "none";
+    document.getElementById("auxImg2").style.display = "none";
     document.getElementById("imgControls").style.animation = "none";
     document.getElementById("imgControls").style.webkitAnimation = "none";
     document.getElementById("grid").style.display = "block";
@@ -88,6 +90,7 @@ function showPreview(){
     document.getElementById("imgControls").style.animationPlayState = "running";
     document.getElementById("imgControls").style.webkitAnimationPlayState = "running";
 }
+
 function showPreview2(){
     stopEffects();
     document.getElementById('grid').style.display = "none";
@@ -98,8 +101,18 @@ function showPreview2(){
     auxImg.style.display = "block";
     auxImg.src = root + "smart.png";
     auxImg.style.position = "absolute";
-    auxImg.style.top = "120px";
-    auxImg.style.left = "380px";
+    auxImg.style.top = "110px";
+    auxImg.style.left = "300px";
+
+
+    let auxImg2 = document.getElementById("auxImg2");
+    auxImg2.style.display = "block";
+    auxImg2.style.zIndex = 1;
+    auxImg2.src = root + "markerImg.png";
+    auxImg2.style.position = "absolute";
+    auxImg2.style.top = "200px";
+    auxImg2.style.left = "330px";
+
     document.getElementById("imgControls").style.animation = '';
     document.getElementById("imgControls").style.webkitAnimation = '';
     document.getElementById("imgControls").style.animationPlayState = "running";
@@ -153,6 +166,8 @@ function showViewer(){
 }
 
 function showEditorLearn(){
+    stopEffects();
+
     document.getElementById('grid').style.display = "block";
     document.getElementById('viewerToolbar').style.display = "none";
     document.getElementById('editorToolbar').style.display = "block";
@@ -160,10 +175,31 @@ function showEditorLearn(){
 }
 
 function showViewerLearn(){
+    stopEffects();
+
+    document.getElementById("textLearn").textContent = "Aim your camera to the marker to visualize.";
+
     document.getElementById('grid').style.display = "none";
     document.getElementById('editorToolbar').style.display = "none";
     document.getElementById('viewerToolbar').style.display = "block";
     document.getElementById('demonstrateArea').style.display = "block";
+    document.getElementById("imgControls").src = root + "cube.png";
+    document.getElementById("imgControls").style.zIndex = 2;
 
-    showImport();
+
+    let auxImg = document.getElementById("auxImg");
+    auxImg.style.display = "block";
+    auxImg.style.zIndex = 1;
+    auxImg.src = root + "markerImg.png";
+    auxImg.style.position = "absolute";
+    auxImg.style.top = "200px";
+    auxImg.style.left = "330px";
+
+    let auxImg2 = document.getElementById("auxImg2");
+    auxImg2.style.display = "block";
+    auxImg2.src = root + "smart.png";
+    auxImg2.style.position = "absolute";
+    auxImg2.style.top = "100px";
+    auxImg2.style.left = "305px";
+    
 }
