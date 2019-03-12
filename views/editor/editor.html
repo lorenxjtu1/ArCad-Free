@@ -22,28 +22,28 @@
     
                     <div class="btn-group dropright marginBT row" data-toggle="tooltip" data-placement="right" title="Controls">
                         <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img id="imgBtLoad" class="imgBT" src="../src/imgs/move.png"/>
+                                <img id="imgBtLoad" class="imgBT" src="../src/icons/move.png"/>
                         </button>
                         <div class="dropdown-menu transforms">
                             <button class="dropdown-item " type="button" onclick="transforms('1')" data-toggle="tooltip" data-placement="right" title="Move (Q)">
-                                <img id="imgBtPreview" class="imgBT text-center" src="../src/imgs/position.png">
+                                <img id="imgBtPreview" class="imgBT text-center" src="../src/icons/position.png">
                             </button>
                             <button class="dropdown-item " type="button" onclick="transforms('2')">
-                                <img id="imgBtPreview" class="imgBT text-center" src="../src/imgs/rotate.png" data-toggle="tooltip" data-placement="right" title="Rotate (W)">
+                                <img id="imgBtPreview" class="imgBT text-center" src="../src/icons/rotate.png" data-toggle="tooltip" data-placement="right" title="Rotate (W)">
                             </button>
                             <button class="dropdown-item " type="button" onclick="transforms('3')">
-                                <img id="imgBtPreview" class="imgBT text-center" src="../src/imgs/scale.png" data-toggle="tooltip" data-placement="right" title="Scale (E)">
+                                <img id="imgBtPreview" class="imgBT text-center" src="../src/icons/scale.png" data-toggle="tooltip" data-placement="right" title="Scale (E)">
                             </button>
                             
                         </div>
                     </div>
     
-                    <button type="button" class="btn marginBT row" onclick="saveKeyframe()" data-toggle="tooltip" data-placement="right" title="Keyframe (K)"><img id="imgBtPreview"  class="imgBT" src="../src/imgs/keyframe.png"></button>
-                    <button type="button" class="btn marginBT row" onclick="preview()" data-toggle="tooltip" data-placement="right" title="Preview (P)"> <img id="imgBtPreview"  class="imgBT" src="../src/imgs/preview.png"></button>
+                    <button type="button" class="btn marginBT row" onclick="saveKeyframe()" data-toggle="tooltip" data-placement="right" title="Keyframe (K)"><img id="imgBtPreview"  class="imgBT" src="../src/icons/keyframe.png"></button>
+                    <button type="button" class="btn marginBT row" onclick="preview()" data-toggle="tooltip" data-placement="right" title="Preview (P)"> <img id="imgBtPreview"  class="imgBT" src="../src/icons/preview.png"></button>
     
                     <div class="btn-group dropright marginBT row" data-toggle="tooltip" data-placement="right" title="Export">
                         <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img id="imgBtLoad" class="imgBT" src="../src/imgs/export.png"/>
+                                <img id="imgBtLoad" class="imgBT" src="../src/icons/export.png"/>
                         </button>
                         <div class="dropdown-menu">
                             <a class="dropdown-item"  onclick="exportContent('1')"  href="#" > 
@@ -55,7 +55,7 @@
     
                     <div class="btn-group dropright marginBT row" data-toggle="tooltip" data-placement="right" title="Load">
                             <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <img id="imgBtLoad" class="imgBT" src="../src/imgs/load.png"/>
+                                    <img id="imgBtLoad" class="imgBT" src="../src/icons/load.png"/>
                             </button>
                             <div class="dropdown-menu">
                                 <input type="file" id="selectedModel" style="display: none;" onchange="onChooseFile(event, onModelLoad.bind(this))" />
@@ -71,7 +71,7 @@
     
                     
                     <button type="button" class="btn viewerBT row" onclick="goToViewer()" data-toggle="tooltip" data-placement="right" title="Viewer"> 
-                        <img id="imgBtPreview"  class="imgBT" src="../src/imgs/smartphone.png">
+                        <img id="imgBtPreview"  class="imgBT" src="../src/icons/smartphone.png">
                     </button>
             
                 </div>       

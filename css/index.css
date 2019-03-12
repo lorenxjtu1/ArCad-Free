@@ -39,6 +39,28 @@
         animation: octocat-wave 560ms ease-in-out
     }
 }
+#editorExplain, #viewerExplain{
+    display: none;
+}
+#title{
+    font-size: 50px;
+}
+#text{
+    font-size: 25px;
+}
+
+.page1{    
+    background-image: linear-gradient(to top, lightgreen, green);
+}
+.page2{
+    background-image: linear-gradient(to bottom, lightgreen, green);
+}
+
+.btn-started{
+    width: 200px;
+    height: 100px;
+    font-size: 50px;
+}
 
 
 

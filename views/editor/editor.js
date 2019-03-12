@@ -191,15 +191,8 @@ function menuState(n){
 
 }
 
-
-
-
 function onkeydown(event){
     switch ( event.keyCode ) {
-
-     
-
-      
 
       case 81: // q
           control.setMode( "translate" );
@@ -363,6 +356,7 @@ function saveKeyframe(){
 }
 
 function preview(){
+    console.log("pathObjs", pathObjs, "pathPoint", pathPoints)
     pathFollower.preview(pathObjs, pathPoints);
 }
 
@@ -875,7 +869,7 @@ function changeStyleColor(){
 
 function goToViewer(){
     exportContent(1);
-    document.location.href = "../viewer/viewer2.html";
+    document.location.href = "../viewer/viewer.html";
 }
 
 window.onload = initEditor;

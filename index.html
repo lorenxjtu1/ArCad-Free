@@ -31,7 +31,7 @@
       </svg>
     </a>
 
-    <div class="page row " style="background-color: lightgreen">
+    <div class="page row page1" style="background-color: lightgreen">
       <div class="col text-center" style="font-family: 'Rubik', sans-serif; ">
         <div id="anim"></div>
         <div class="row justify-content-center">
@@ -52,13 +52,55 @@
       </div>
 
     </div>
-    <div class="page row" style="background-color: lightgreen">
-      <div class="col text-center">
-        <button class="btn btn-light btn-lg"><a style="color: black" href="./views/editor/editor.html">Editor</a></button>
-      </div>
-      <div class="col text-center">
-          <button class="btn btn-light btn-lg"><a style="color: black" href="./views/viewer/viewer.html">Viewer</a></button>
-      </div>
+    <div class="page row page2" style="font-family: 'Rubik', sans-serif; background-color: lightgreen">
+
+          <div id="viewerExplain" class="col text-center">
+              <div id="title" class="row">
+                  <div class="col">
+                      Viewer
+                  </div>
+                </div>
+                <div id="imgEditor" class="row">
+                    <div class="col">
+                       <img style="width: 300px; height: 200px; margin-top: 20px; margin-bottom: 20px; border-radius: 10px;" src="">
+                    </div>
+                  </div>
+                <div id="viewerContent" class="row">
+                  <div class="col text-center">
+                   <p id="text">Visualize your animations, show your desings and ideias in a different way.</p> 
+                  </div>
+                </div>
+          </div>
+
+          <div id="editorContainer" class="col text-center">
+            <button id="btEditor" class="btn btn-light btn-lg btn-started"><a style="color: black" href="./views/editor/editor.html">Editor</a></button>
+            
+          </div>
+
+          <div id="viewerContainer" class="col text-center">
+              <button id="btViewer" class="btn btn-light btn-lg btn-started"><a style="color: black" href="./views/viewer/viewer.html">Viewer</a></button>
+          </div>
+
+          <div id="editorExplain" class="col text-center">
+            <div id="title" class="row">
+              <div class="col">
+                  Editor
+              </div>
+            </div>
+            <div id="imgEditor" class="row">
+                <div class="col">
+                   <img style="width: 300px; height: 200px; margin-top: 20px; margin-bottom: 20px; border-radius: 10px;" src="assets/images/imgEditor.png">
+                </div>
+              </div>
+            <div id="editorContent" class="row">
+              <div class="col text-center">
+               <p id="text">The Editor allows you to make animations with the 3D models. <br> Move, rotate or change the scale, and then set a new key frame. <br> Key frames are the steps of your animations, they represent the state of the 3D model in that time.</p> 
+              </div>
+            </div>
+          </div>
+          
+
+      
     </div>
     
   </div>
