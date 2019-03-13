@@ -50,10 +50,10 @@
 }
 
 .page1{    
-    background-image: linear-gradient(to top, lightgreen, green);
+    background-image: linear-gradient(to top, lightgreen, rgb(71,200,99));
 }
 .page2{
-    background-image: linear-gradient(to bottom, lightgreen, green);
+    background-image: linear-gradient(to bottom, lightgreen,rgb(71,200,99));
 }
 
 .btn-started{
