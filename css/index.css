@@ -65,11 +65,27 @@
     display: none;
 }
 
-
-
-
 #anim{
   max-width: 800px;
   height: 400px;
   margin: auto;
+}
+.mobileText{
+    display: none;
+}
+
+@media (max-width: 576px){
+    .main-text{
+        font-size: 30px !important;
+    }
+    .mobileText{
+        font-size: 30px !important;
+        display: block;
+    }
+    .secondary-text-container{
+        display: none;
+    }
+    #editorContainer{
+        display: none;
+    }
 }
