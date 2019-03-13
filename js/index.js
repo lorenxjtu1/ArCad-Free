@@ -27,34 +27,36 @@ function getStarted(){
 let editorBt = document.getElementById("btEditor");
 editorBt.addEventListener("mouseover", (e) => {
     e.preventDefault();
-    let viewerContainer = document.getElementById("viewerContainer");
-    viewerContainer.style.display = "none";
-    let editorExplain = document.getElementById("editorExplain");
-    editorExplain.style.display = "block";
+    document.getElementById("viewerContainer").style.display = "none";
+    document.getElementById("editorExplain").style.display = "block";
 })
 
 editorBt.addEventListener("mouseout", (e) => {
     e.preventDefault();
-    let viewerContainer = document.getElementById("viewerContainer");
-    viewerContainer.style.display = "block";
-    let editorExplain = document.getElementById("editorExplain");
-    editorExplain.style.display = "none";
+    document.getElementById("viewerContainer").style.display = "block";
+    document.getElementById("editorExplain").style.display = "none";
 })
 
 
 let viewerBt = document.getElementById("btViewer");
-viewerBt.addEventListener("mouseover", (e) => {
-    e.preventDefault();
-    let editorContainer = document.getElementById("editorContainer");
-    editorContainer.style.display = "none";
-    let viewerExplain = document.getElementById("viewerExplain");
-    viewerExplain.style.display = "block";
-})
+let markerBt = document.getElementById("btMarker");
 
-viewerBt.addEventListener("mouseout", (e) => {
+viewerBt.addEventListener("mouseover", show);
+markerBt.addEventListener("mouseover", show);
+
+viewerBt.addEventListener("mouseout", hide);
+markerBt.addEventListener("mouseout", hide);
+
+function show(e) {
     e.preventDefault();
-    let editorContainer = document.getElementById("editorContainer");
-    editorContainer.style.display = "block";
-    let viewerExplain = document.getElementById("viewerExplain");
-    viewerExplain.style.display = "none";
-})
+    document.getElementById("editorContainer").style.display = "none";
+    document.getElementById("viewerExplain").style.display = "block";
+    document.getElementById('btMarker').style.display = "block";
+}
+
+function hide(e){
+    e.preventDefault();
+    document.getElementById("editorContainer").style.display = "block";
+    document.getElementById("viewerExplain").style.display = "none";
+    document.getElementById('btMarker').style.display = "none";
+}
