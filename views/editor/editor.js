@@ -598,7 +598,7 @@ function deleteSelected(){
 }
 
 function showKeys(){
-    
+    let tempCont = 0;
     let keyArrIndex;
     let parent = document.getElementById("elementsWrapper");
 
@@ -626,6 +626,8 @@ function showKeys(){
             }else{
                 indexFrames = 0;
             }
+
+            
            
             for(let i = indexFrames; i < qtnFrames; i++){
     
@@ -649,7 +651,8 @@ function showKeys(){
                 btn.style.left = leftDistance + "px";
     
                 parent.appendChild(btn);
-    
+
+                document.getElementById('line').style.width = i * 100 + "px";
             }
         }else{
             document.getElementById("timeline").style.display = "none";
