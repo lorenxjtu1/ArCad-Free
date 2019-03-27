@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 .page p {
@@ -73,8 +74,20 @@
 .mobileText{
     display: none;
 }
+#mobileLogo{
+    display: none;
+}
 
 @media (max-width: 576px){
+    #anim{
+        display: none;
+    }
+    #mobileLogo{
+        display: block;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .main-text{
         font-size: 30px !important;
     }
@@ -87,5 +100,11 @@
     }
     #editorContainer{
         display: none;
+    }
+}
+
+@media (max-width: 350px){
+    .main-text{
+        font-size: 25px !important;
     }
 }
