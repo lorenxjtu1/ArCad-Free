@@ -108,3 +108,12 @@
         font-size: 25px !important;
     }
 }
+
+@media (max-height: 480px){
+    .main-text{
+        font-size: 25px !important;
+    }
+    #mobileLogo{
+        height: 200px;
+    }
+}
