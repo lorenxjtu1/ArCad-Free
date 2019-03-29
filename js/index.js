@@ -22,6 +22,11 @@ editorBt.addEventListener("mouseover", (e) => {
     document.getElementById("editorExplain").style.display = "block";
 })
 
+editorBt.addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    window.location.href = './views/editor/editor.html';
+})
+
 editorBt.addEventListener("mouseout", (e) => {
     e.preventDefault();
     document.getElementById("viewerContainer").style.display = "block";
@@ -37,6 +42,11 @@ markerBt.addEventListener("mouseover", show);
 
 viewerBt.addEventListener("mouseout", hide);
 markerBt.addEventListener("mouseout", hide);
+
+viewerBt.addEventListener("touchstart", (e) => {
+    e.preventDefault();
+    window.location.href = './views/viewer/viewer.html';
+})
 
 function show(e) {
     e.preventDefault();
