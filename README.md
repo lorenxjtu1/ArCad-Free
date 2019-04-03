@@ -61,6 +61,9 @@ npm run build
 * integrate with react
 
 ## Credits / OpenSource attribuitons
+
+Site template: https://github.com/xiaogliu/pure_full_page
+
 ### Icons and other visual Assets
 - all icons used in this project come from ![theNounProject](https://thenounproject.com)
 - 
