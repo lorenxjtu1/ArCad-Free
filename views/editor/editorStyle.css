@@ -35,6 +35,10 @@ body{
     
 }
 
+.list-group-right{
+    float: right;
+}
+
 
 
 #imgBtLoad{

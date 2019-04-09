@@ -7,6 +7,9 @@ var objects = [];
 var lastSelected;
 var lastSelectedToMaterial;
 
+var lastKeySelected = new THREE.Vector2();
+var lastKeySelectedElement;
+
 var mouse = new THREE.Vector2();
 
 var keyframes = [];
@@ -21,9 +24,6 @@ var popMenu = false;
 var overMenu = false;
 
 var keysOpen = false;
-
-var lastKeySelected = new THREE.Vector2();
-var lastKeySelectedElement;
 
 var pathUpdate = false;
 
@@ -597,6 +597,9 @@ function deleteSelected(){
     document.getElementById("optBt").style.display = "none";
 }
 
+
+/* ----------------------- UI ------------------------------ */
+
 function showKeys(){
     let tempCont = 0;
     let keyArrIndex;
@@ -804,6 +807,31 @@ function deleteKey(){
         keysOpen = false;
         showKeys();
     }
+}
+
+function saveKey(){
+
+    keyframes[lastKeySelected.x].position[lastKeySelected.y].copy(lastSelected.position);
+    keyframes[lastKeySelected.x].rotation[lastKeySelected.y].copy(lastSelected.quaternion);
+
+    scene.remove(keyframes[lastKeySelected.x].path);
+
+    let geometry = new THREE.Geometry();
+    let material = new THREE.LineBasicMaterial({
+        color: "rgb(255, 00, 00)"
+    });
+    
+    geometry.vertices = keyframes[lastKeySelected.x].position;
+
+    let line = new THREE.Line(geometry, material);
+
+    keyframes[lastKeySelected.x].path = line;
+    keyframes[lastKeySelected.x].position = line.geometry.vertices;
+    
+    
+    pathPoints[lastKeySelected.x].position = line.geometry.vertices;
+    pathPoints[lastKeySelected.x].rotationQuat = keyframes[lastKeySelected.x].rotation;
+    scene.add(keyframes[lastKeySelected.x].path);
 }
 
 function changeStyleColor(){
