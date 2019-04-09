@@ -1,5 +1,5 @@
 # Intro
-ArCad is a Editor and a Viewer for your 3D Models!
+ArCad is a animation Editor and a Viewer for your 3D Models!
 
 This project still in development, if you find any bugs or erros, please, open a issue.
 
