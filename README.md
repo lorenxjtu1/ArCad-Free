@@ -19,48 +19,22 @@ The marker that the viewer use is the Hiro Marker.
 | Date       |      features                |  state |
 |------------|:----------------------------:|:-----:|
 | March 2019 | Alpha Release                |  100% |
+| March 2019 | VR Support               |  100% |
 | -          | -                |  -    |
 
-## Architecture
 
+## HUGE THANKS
 
-# Development Guidelines
-## Running local instance
-```npm
-cd ./app/
-npm install 
-npm start
-```
+https://threejs.org/
 
-## Building
-```npm
-npm run build
-```
+https://github.com/jeromeetienne/AR.js
 
-## Architecture
-```js
-/app/
-    src/
-        .babelrc /*babel compile configuration*/
-        index.js /*main entry point*/
-        config.json /* all high-level info */
-        views/ /*all .html and .css*/
-            css/
-        commons/ /*all generic algorithms*/
-
-    dist/ /*compiled version of the code*/
-
-```
-
-## React Components
-* Menu
-* Viewer3D
-* AnimationMenu
-
-# Milestones
-* integrate with react
+https://webvr.info/
 
 ## Credits / OpenSource attribuitons
+
+https://github.com/xiaogliu/pure_full_page
+
 ### Icons and other visual Assets
 - all icons used in this project come from ![theNounProject](https://thenounproject.com)
 - 
