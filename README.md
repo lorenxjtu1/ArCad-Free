@@ -17,9 +17,9 @@ The marker that the viewer use is the Hiro Marker.
 
 ## Milestones
 | Date       |      features                |  state |
-|------------|:----------------------------:|:-----:|
-| March 2019 | Alpha Release                |  100% |
-| -          | -                |  -    |
+|------------|:----------------------------:|:-----: |
+| March 2019 | Alpha Release                |  100%  |
+| April 2019 | VR support                   |  100%  |
 
 
 ## Credits / OpenSource attribuitons
