@@ -20,6 +20,7 @@ The marker that the viewer use is the Hiro Marker.
 |------------|:----------------------------:|:-----:|
 | March 2019 | Alpha Release                |  100% |
 | March 2019 | VR Support               |  100% |
+| April 2019 | IoT Support               |  50% |
 | -          | -                |  -    |
 
 
