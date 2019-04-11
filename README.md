@@ -1,5 +1,5 @@
 # Intro
-ArCad is a Editor and a Viewer for your 3D Models!
+ArCad is a keyframe Editor and a Viewer for your 3D Models!
 
 This project still in development, if you find any bugs or erros, please, open a issue.
 
@@ -21,6 +21,7 @@ The marker that the viewer use is the Hiro Marker.
 | March 2019 | Alpha Release                |  100% |
 | March 2019 | VR Support               |  100% |
 | April 2019 | IoT Support               |  50% |
+| April 2019 | Advanced Mode              |  50% |
 | -          | -                |  -    |
 
 
