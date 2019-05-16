@@ -1,5 +1,5 @@
 # Intro
-ArCad is a Digital Twin viewer, animation editor (keyframes) and 3d model viewer in AR, VR and it has support for IoT!
+ArCad is a Digital Twin viewer, animation editor (keyframes) and 3d model viewer in AR or VR and it has support for IoT!
 
 This project still in development, if you find any bugs or erros, please, open a issue.
 
