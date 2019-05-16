@@ -1,7 +1,9 @@
 # Intro
-ArCad is a keyframe Editor and a Viewer for your 3D Models!
+ArCad is a Digital Twin viewer, animation editor (keyframes) and 3d model viewer in AR, VR and it has support for IoT!
 
 This project still in development, if you find any bugs or erros, please, open a issue.
+
+This repository is the free version of the software!
 
 ## The Marker
 
@@ -38,5 +40,5 @@ https://webvr.info/
 https://github.com/xiaogliu/pure_full_page
 
 ### Icons and other visual Assets
-- all icons used in this project come from ![theNounProject](https://thenounproject.com)
-- 
+- https://thenounproject.com
+- https://fontawesome.com/
