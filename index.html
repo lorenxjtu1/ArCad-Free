@@ -1,119 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ArCad</title>
-
-
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/pureFullPage.min.css">
-  <link rel="stylesheet" href="./css/index.css">
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div id="pureFullPage">
-
-    <div class="page row page1" style="background-color: lightgreen">
-      <div class="col text-center" style="font-family: 'Rubik', sans-serif; ">
-        <div id="anim"></div>
-        <img id="mobileLogo" src="assets/icons/icon.svg"></img>
-        <div class="row justify-content-center">
-          <p class='main-text' style="font-size: 50px;">Visualize Digital Twin and CAD Projects for Augmented and Virtual Reality presentations</p>
-        </div>
-        <div class="row justify-content-center secondary-text-container">
-            <p style="font-size: 20px;">With ARCAD Editor you can import and create animations of exploded views and parts highlights.</p>
-        </div>
-        <div class="row justify-content-center">
-          <button href="#get-started" class="btn btn-light btn-lg" onclick="getStarted()">Get Started</button>
-        </div>
-        <div class="row justify-content-center">
-          <a href="https://github.com/Carnaux/ArCad-Free" style="margin-top: 10px;">Documentation</a>
-        </div>
-        <div class="row justify-content-center">
-          <p style="font-size: 20px; margin-top: 10px;">Free version: 0.1 alpha - March 7 2019</p>
-        </div>
-      </div>
-
-    </div>
-    <div class="page row page2" style="font-family: 'Rubik', sans-serif; background-color: lightgreen">
-
-          <div id="viewerExplain" class="col text-center">
-              <div id="title" class="row">
-                  <div class="col">
-                      Viewer
-                  </div>
-                </div>
-                <div id="imgEditor" class="row">
-                    <div class="col">
-                       <img style="width: 300px; height: 200px; margin-top: 20px; margin-bottom: 20px; border-radius: 10px;" src="assets/images/imgViewer.png">
+    <div class="container-fluid">
+        <div class="row mt-2">
+            <div class="col">
+                <div class="row">
+                    <div class="col text-left align-self-center" >
+                        <div class="row" >
+                            <div class="col text-left ">
+                                <a class="btn btn-outline-lightBlue" href="views/editor/editor.html">Editor</a>
+                                <a class="btn btn-outline-lightBlue" href="views/viewer/viewer.html">Viewer</a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                <div id="viewerContent" class="row">
-                  <div class="col text-center">
-                   <p id="text">Visualize your animations, show your desings and ideias in a different way.<br>Click in the "Marker" button to download the AR marker.</p> 
-                  </div>
+                    <div class="col text-center">
+                        <svg id="logoIcon" width="92.56649mm" height="135.7904mm" version="1.1" viewBox="0 0 92.56649 135.7904" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <clipPath id="clipPath4538">
+                                <path d="m466.751 316.25h157.849v448.849h-157.849z"/>
+                                </clipPath>
+                                <clipPath id="clipPath4630">
+                                <path d="m328.416 340.56h138.335v396.395h-138.335z"/>
+                                </clipPath>
+                            </defs>
+                            <g transform="translate(136.0091 -69.1827)">
+                                <g transform="matrix(.3527778 0 0 -.3527778 -254.3569 327.1705)">
+                                <g transform="matrix(1 0 0 1.001982 0 -.6906933)">
+                                    <g clip-path="url(#clipPath4538)">
+                                    <g transform="translate(420.3838,594.3184)">
+                                        <path d="m0 0h-30.796v-177.525h154.325v177.525z" fill="none" stroke="#3b78a8" stroke-miterlimit="10" stroke-width="4"/>
+                                    </g>
+                                    <g transform="translate(591.5312,369.4033)">
+                                        <path d="m0 0c-5.409 9.113-15.346 15.225-26.721 15.225h-196.12c-17.152 0-31.056-13.905-31.056-31.058v-2.813c0-1.305 1.061-2.367 2.366-2.367h253.5c1.305 0 2.367 1.062 2.367 2.367v2.813c0 5.78-1.575 11.19-4.336 15.833z" fill="none" stroke="#3b78a8" stroke-miterlimit="10" stroke-width="4"/>
+                                    </g>
+                                    <g transform="translate(370.9487,384.6279)">
+                                        <path d="m0 0h193.144c2.002 0 3.937-0.252 5.832-0.614v1.721c0 4.589-0.992 8.946-2.781 12.864-4.89 10.737-15.709 18.194-28.276 18.194h-144.235c-17.153 0-31.057-13.904-31.057-31.058v-1.454c1.44 0.204 2.9 0.347 4.397 0.347z" fill="none" stroke="#3b78a8" stroke-miterlimit="10" stroke-width="4"/>
+                                    </g>
+                                    <g transform="translate(543.9131,663.1494)">
+                                        <path d="m0 0h-154.325c-6.503 0-12.588-1.804-17.777-4.939-10.006-6.051-16.686-17.048-16.639-29.607 0.069-18.116 14.465-33.208 32.488-34.206v-0.025l0.295-1e-3c0.121-5e-3 0.236-0.026 0.356-0.031 0.989-0.035 1.964-0.016 2.933 0.03l154.404-0.052 1e-3 0.056c12.79 0.636 23.777 8.361 29.153 19.257 2.242 4.536 3.512 9.623 3.527 14.972 0.069 19.07-15.363 34.546-34.416 34.546z" fill="none" stroke="#3b78a8" stroke-miterlimit="10" stroke-width="4"/>
+                                    </g>
+                                    <g transform="translate(565.6772,701.7705)">
+                                        <path d="m0 0 13.029 23.362c0.852 1.532-0.256 3.414-2.008 3.414h-219.896c-1.752 0-2.86-1.882-2.007-3.414l13.028-23.362 6.854-12.297 14.679-26.332c0.078 1e-3 0.154 8e-3 0.232 8e-3h154.325c0.077 0 0.151-0.011 0.227-0.012l14.683 26.336z" fill="none" stroke="#3b78a8" stroke-miterlimit="10" stroke-width="4"/>
+                                    </g>
+                                    <g transform="translate(466.7505,728.5469)">
+                                        <path d="m0 0v-380.156" fill="none" stroke="#3b78a8" stroke-miterlimit="10"/>
+                                    </g>
+                                    <g transform="translate(521.8638,348.3906)">
+                                        <path d="m0 0c0 2.951-1.074 31.411-12.349 35.623-1.61 28.373-14.13 32.779-14.13 32.779v177.572s28.635 35.182 0 68.785l18.426 65.397" fill="none" stroke="#3b78a8" stroke-miterlimit="10"/>
+                                    </g>
+                                    <g transform="translate(561.0576,348.3906)">
+                                        <path d="m0 0c0 2.951 0 31.948-22.908 35.623-1.611 28.373-14.13 32.779-14.13 32.779v177.572s50.192 36.17 0 68.785l32.475 65.397" fill="none" stroke="#3b78a8" stroke-miterlimit="10"/>
+                                    </g>
+                                    <g transform="translate(411.6372,348.3906)">
+                                        <path d="m0 0c0 2.951 1.074 31.411 12.349 35.623 1.61 28.373 14.13 32.779 14.13 32.779v177.572s-28.635 35.182 0 68.785l-18.426 65.397" fill="none" stroke="#3b78a8" stroke-miterlimit="10"/>
+                                    </g>
+                                    <g transform="translate(372.4434,348.3906)">
+                                        <path d="m0 0c0 2.951 0 31.948 22.908 35.623 1.61 28.373 14.13 32.779 14.13 32.779v177.572s-50.192 36.17 0 68.785l-32.475 65.397" fill="none" stroke="#3b78a8" stroke-miterlimit="10"/>
+                                    </g>
+                                    <g transform="translate(360.002,611.311)">
+                                        <path d="m0 0h213.534" fill="none" stroke="#3b78a8" stroke-miterlimit="10"/>
+                                    </g>
+                                    <g transform="translate(360.002,645.8706)">
+                                        <path d="m0 0h213.534" fill="none" stroke="#3b78a8" stroke-miterlimit="10"/>
+                                    </g>
+                                    <g transform="translate(377.7524,683.9561)">
+                                        <path d="m0 0h177.996" fill="none" stroke="#3b78a8" stroke-miterlimit="10"/>
+                                    </g>
+                                    <g transform="translate(368.1562,400.71)">
+                                        <path d="m0 0h197.925" fill="none" stroke="#3b78a8" stroke-miterlimit="10"/>
+                                    </g>
+                                    <g transform="translate(389.5879,441.5449)">
+                                        <path d="m0 0h154.325" fill="none" stroke="#3b78a8" stroke-miterlimit="10"/>
+                                    </g>
+                                    <g transform="translate(389.5879,478.7705)">
+                                        <path d="m0 0h154.325" fill="none" stroke="#3b78a8" stroke-miterlimit="10"/>
+                                    </g>
+                                    <g transform="translate(389.5879,519.5752)">
+                                        <path d="m0 0h154.325" fill="none" stroke="#3b78a8" stroke-miterlimit="10"/>
+                                    </g>
+                                    <g transform="translate(389.5879,559.1792)">
+                                        <path d="m0 0h154.325" fill="none" stroke="#3b78a8" stroke-miterlimit="10"/>
+                                    </g>
+                                    <g transform="translate(340.4678,366.5088)">
+                                        <path d="m0 0h252.566" fill="none" stroke="#3b78a8" stroke-miterlimit="10"/>
+                                    </g>
+                                    <g transform="translate(364.584,707.5801)">
+                                        <path d="m0 0h204.333" fill="none" stroke="#3b78a8" stroke-miterlimit="10"/>
+                                    </g>
+                                    <g transform="translate(355.1719,628.603)">
+                                        <path d="m0 0h223.157" fill="none" stroke="#3b78a8" stroke-miterlimit="10"/>
+                                    </g>
+                                    </g>
+                                </g>
+                                <g clip-path="url(#clipPath4630)">
+                                    <g transform="translate(591.686,369.6152)">
+                                    <path class="insideColorLogo" d="m0 0c-4.583 7.722-12.43 13.245-21.633 14.774v1.578c0 4.594-0.993 8.957-2.784 12.879-4.897 10.75-15.729 18.217-28.312 18.217h5.052v177.746h-154.517v-177.746h5.051c-17.173 0-31.095-13.922-31.095-31.096v-1.456c1.442 0.205 2.904 0.347 4.403 0.347h0.718c-17.174 0-31.095-13.922-31.095-31.096v-2.816c0-1.308 1.062-2.37 2.369-2.37h253.815c1.307 0 2.37 1.062 2.37 2.37v2.816c0 5.788-1.577 11.204-4.342 15.853" fill="#e6cfb2"/>
+                                    </g>
+                                    <g transform="translate(367.7007,702.395)">
+                                    <path class="insideColorLogo" d="m0 0 6.862-12.313 14.698-26.364c0.077 0 0.153 7e-3 0.232 7e-3 -6.511 0-12.604-1.806-17.799-4.945-10.018-6.058-16.706-17.069-16.66-29.644 0.069-18.138 14.482-33.248 32.528-34.248v-0.025l0.296-1e-3c0.12-5e-3 0.236-0.026 0.357-0.03 0.989-0.036 1.965-0.017 2.935 0.03l154.596-0.053 2e-3 0.056c12.806 0.637 23.806 8.372 29.188 19.281 2.245 4.542 3.517 9.635 3.532 14.99 0.069 19.094-15.383 34.589-34.459 34.589 0.077 0 0.151-0.011 0.228-0.011l14.702 26.368 6.862 12.313 13.044 23.391c0.854 1.533-0.255 3.418-2.009 3.418h-220.17c-1.754 0-2.863-1.885-2.009-3.418z" fill="#e6cfb2"/>
+                                    </g>
+                                    <g transform="translate(420.3262,594.8091)">
+                                    <path d="m0 0h-30.834v-177.747h154.517v177.747z" fill="none" stroke="#3b78a8" stroke-miterlimit="10" stroke-width="4"/>
+                                    </g>
+                                    <g transform="translate(591.686,369.6152)">
+                                    <path d="m0 0c-5.416 9.124-15.365 15.243-26.754 15.243h-196.363c-17.174 0-31.095-13.922-31.095-31.097v-2.816c0-1.307 1.062-2.369 2.369-2.369h253.815c1.307 0 2.37 1.062 2.37 2.369v2.816c0 5.789-1.577 11.205-4.342 15.854z" fill="none" stroke="#3b78a8" stroke-miterlimit="10" stroke-width="4"/>
+                                    </g>
+                                    <g transform="translate(370.8301,384.8584)">
+                                    <path d="m0 0h193.383c2.005 0 3.942-0.253 5.84-0.615v1.724c0 4.594-0.993 8.955-2.785 12.879-4.896 10.75-15.728 18.216-28.311 18.216h-144.414c-17.173 0-31.095-13.921-31.095-31.095v-1.457c1.442 0.205 2.903 0.348 4.403 0.348z" fill="none" stroke="#3b78a8" stroke-miterlimit="10" stroke-width="4"/>
+                                    </g>
+                                    <g transform="translate(544.0088,663.7256)">
+                                    <path d="m0 0h-154.517c-6.51 0-12.603-1.806-17.798-4.945-10.018-6.058-16.706-17.07-16.66-29.644 0.069-18.139 14.482-33.249 32.528-34.248v-0.026h0.296c0.12-6e-3 0.236-0.026 0.357-0.031 0.989-0.035 1.966-0.017 2.936 0.03l154.595-0.053 2e-3 0.056c12.806 0.638 23.805 8.372 29.188 19.281 2.245 4.542 3.517 9.636 3.531 14.991 0.07 19.093-15.381 34.589-34.458 34.589z" fill="none" stroke="#3b78a8" stroke-miterlimit="10" stroke-width="4"/>
+                                    </g>
+                                    <g transform="translate(565.8003,702.3945)">
+                                    <path d="m0 0 13.045 23.392c0.853 1.533-0.256 3.418-2.01 3.418h-220.169c-1.755 0-2.864-1.885-2.01-3.418l13.044-23.392 6.863-12.313 14.697-26.364c0.078 1e-3 0.154 8e-3 0.232 8e-3h154.516c0.078 0 0.152-0.011 0.229-0.012l14.701 26.368z" fill="none" stroke="#3b78a8" stroke-miterlimit="10" stroke-width="4"/>
+                                    </g>
+                                    <g transform="translate(409.4097,594.855)">
+                                    <path d="m0 0v-177.792" fill="none" stroke="#3b78a8" stroke-miterlimit="10" stroke-width="4"/>
+                                    </g>
+                                    <g transform="translate(438.0801,594.855)">
+                                    <path d="m0 0v-177.792" fill="none" stroke="#3b78a8" stroke-miterlimit="10" stroke-width="4"/>
+                                    </g>
+                                    <g transform="translate(466.7505,594.855)">
+                                    <path d="m0 0v-177.792" fill="none" stroke="#3b78a8" stroke-miterlimit="10" stroke-width="4"/>
+                                    </g>
+                                    <g transform="translate(495.4209,594.855)">
+                                    <path d="m0 0v-177.792" fill="none" stroke="#3b78a8" stroke-miterlimit="10" stroke-width="4"/>
+                                    </g>
+                                    <g transform="translate(524.0913,594.855)">
+                                    <path d="m0 0v-177.792" fill="none" stroke="#3b78a8" stroke-miterlimit="10" stroke-width="4"/>
+                                    </g>
+                                </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="col text-right align-self-center">
+                        <button class="btn btn-outline-success">Sign In</button>
+                        <button class="btn btn-outline-lightBlue">Log In</button>
+                    </div>
                 </div>
-          </div>
-
-          <div id="editorContainer" class="col text-center">
-            <input id="btEditor" class="btn btn-light btn-lg btn-started" style="color: black" type="button" onclick="location.href='./views/editor/editor.html';" value="Editor" />
-            <!-- <a id="btEditor" class="btn btn-light btn-lg btn-started" style="color: black" href="./views/editor/editor.html">Editor</a> -->
-            
-          </div>
-
-          <div id="viewerContainer" class="col text-center">
-            <p class="mobileText" >You are in the Mobile version, so you only have access to the Viewer, to get full access use a desktop.</p>
-            <!-- <a id="btViewer" href="./views/viewer/viewer.html" class="btn btn-light btn-lg btn-started">Viewer</a> -->
-            <input id="btViewer" class="btn btn-light btn-lg btn-started" style="color: black" type="button" onclick="location.href='./views/viewer/viewer.html';" value="Viewer" />
-            <button id="btMarker" class="btn btn-light btn-lg" style="margin-left: auto; margin-right: auto;" >
-              <a style="color: black" href="https://jeromeetienne.github.io/AR.js/data/images/HIRO.jpg">Marker</a>
-            </button>
-             
-              
-          </div>
-
-          <div id="editorExplain" class="col text-center">
-            <div id="title" class="row">
-              <div class="col">
-                  Editor
-              </div>
-            </div>
-            <div id="imgEditor" class="row">
-                <div class="col">
-                   <img style="width: 300px; height: 200px; margin-top: 20px; margin-bottom: 20px; border-radius: 10px;" src="assets/images/imgEditor.png">
+                <div class="row">
+                    <div class="col text-center">
+                        <svg id="textIcon" width="348.6011mm" height="105.0421mm" version="1.1" viewBox="0 0 348.6011 105.0421" xmlns="http://www.w3.org/2000/svg">
+                            <g transform="translate(52.66326 -96.61692)">
+                                <g stroke="#000" stroke-width=".2645833px">
+                                <path transform="matrix(.2645833 0 0 .2645833 -52.66326 96.61692)" d="m1317.045 0.5117188-43.4375 1.009766-1.0097 175.7656h-154.5528l-21.2129 43.4375v131.3203l21.2129 43.43555 196.9805 1.00976 2.0195-395.9785zm-1141.473 44.44531-174.7559 351.5332 44.44727-1.00976 131.3184-263.6504 129.3008 260.6211 45.45703 3.0293-175.7676-350.5234zm374.7676 130.3105-133.3398 1.00976-20.20312 42.42774-2.02149 176.7754 45.45703 1.00976-2.01953-155.5625 22.22266-21.21289 67.67968 1.00977 22.22461-45.45703zm283.8516 0-1.00977 44.44726 175.7676-1.01172 1.0098 44.44727h-153.543l-23.23438 43.4375-1.00976 45.45703 23.23242 42.42578 199-1.00976v-173.7461l-23.2324-44.44726h-196.9805zm-240.416 1.00976-45.45703 88.89454 1.00976 44.44531 42.42774 86.87304h199l-1.00977-45.45507h-175.7676l-21.2129-42.42774 1.00977-45.45703 20.20313-43.43555 176.7773 1.00977-1.00977-43.4375-195.9707-1.00977zm547.5019 43.4375 130.3106 1.00977 2.0195 132.3301-131.3183-2.02149-1.0118-131.3184zm-263.6484 87.88282 132.3301 1.00976-1.0098 42.42578-131.3203-1.00976v-42.42578z" fill-opacity=".9670782" stroke-width=".9999999px"/>
+                                </g>
+                            </g>
+                        </svg>      
+                    </div>
                 </div>
-              </div>
-            <div id="editorContent" class="row">
-              <div class="col text-center">
-               <p id="text">The Editor allows you to make animations with the 3D models. <br> Move, rotate or change the scale, and then set a new key frame. <br> Key frames are the steps of your animations, they represent the state of the 3D model. Supported formats: .OBJ, .arcad.</p> 
-              </div>
             </div>
-          </div>
-          
+        </div>
 
-      
+        <!-- First Content -->
+        <div id="firstContent" class="row">
+            <div id="texts" class="col text-center">
+                <br>
+                <p id="txt1" class="font1">SHOW YOUR <span id="txtSpan1" >PROJECTS</span></p>
+                <p id="txt2" class="font1">SHOW YOUR <span id="txtSpan2" >DESIGNS</span></p>
+                <p id="txt0" class="font1">SHOW YOUR <span id="txtSpan0" >IDEAS</span></p>
+                <p id="txt3" class="font1">SHOW YOUR <span id="txtSpan3" >PASSION</span></p>
+            </div>
+            <div id="gl" class="col">
+                <div id="renderDiv"></div>
+                <div class="row" >              
+                    <button id="p" class="col-4 btn btn-outline-lightBlue btArrow" onclick="show('p')">
+                        <svg width="3.5mm" height="5mm" version="1.1" viewBox="0 0 .7446539 1.31478" xmlns="http://www.w3.org/2000/svg">
+                            <g transform="translate(-112.1038 -100.9864)">
+                                <g class="btArrowIcon" transform="matrix(-1 0 0 1 224.9522 0)" fill="none" stroke="#000" stroke-linecap="round" stroke-width=".165">
+                                <path d="m112.1871 101.0697 0.33177 0.31689 0.24618 0.23514" stroke-linejoin="round" style="paint-order:fill markers stroke"/>
+                                <path d="m112.7651 101.6218-0.57795 0.59609"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                    <button id="n" class="col-4 btn btn-outline-lightBlue btArrow" onclick="show('n')">
+                        <svg width="3.5mm" height="5mm" version="1.1" viewBox="0 0 .7446539 1.31478" xmlns="http://www.w3.org/2000/svg">
+                            <g class="btArrowIcon" transform="translate(-112.1038 -100.9864)" fill="none" stroke="#000" stroke-linecap="round" stroke-width=".165">
+                            <path d="m112.1871 101.0697 0.33177 0.31689 0.24618 0.23514" stroke-linejoin="round" style="paint-order:fill markers stroke"/>
+                            <path d="m112.7651 101.6218-0.57795 0.59609"/>
+                            </g>
+                        </svg>
+                    </button>
+                </div>    
+            </div>
+        </div>
     </div>
-    
-  </div>
 
 
-
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="./js/pureFullPage.min.js"></script>
-  <script src="./js/lottie.js"></script> 
-  <script src="./js/index.js"></script>
+    <script src="src/js/three.min.js"></script>
+    <script src="src/js/MTLLoader.js"></script>
+    <script src="src/js/OBJLoader.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script src="src/js/scene.js"></script>
 </body>
-
 </html>

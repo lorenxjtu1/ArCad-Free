@@ -1,0 +1,75 @@
+#logoIcon{
+    width: auto;
+    height: 55px;
+}
+#logoIcon path{
+    stroke: rgb(83,119,166);
+}
+#logoIcon .insideColorLogo{
+    fill: rgb(224,207,179)
+}
+
+#textIcon{
+    width: auto;
+    height: 40px;
+}
+#textIcon path{
+    fill: rgb(83,119,166);
+    stroke: rgb(83,119,166);
+} 
+
+.btn-outline-lightBlue{
+    border-color: rgb(83,119,166);
+    color: rgb(83,119,166);
+}
+.btn-outline-lightBlue:hover{
+    background-color: rgb(83,119,166);
+    color: white;
+}
+
+.btArrowIcon{
+    stroke: rgb(83,119,166);
+}
+.btArrow:hover  .btArrowIcon{
+    stroke: white;
+}
+
+/* first content */
+#firstContent{
+    margin-top: 80px;
+}
+#renderDiv{
+    width: 500px;
+    height: 400px;
+    background-color: rgb(200,200,200);
+}
+#gl{
+    display: block;
+}
+
+.font1{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 40px;
+    color: rgb(224,207,179);
+    margin-top: 20px;
+}
+#txtSpan0{
+    color: rgb(83,119,166);
+}
+#txt1, #txt2, #txt3{
+    opacity: 0.3;
+}
+
+.mobilePos{
+    position: absolute;
+    top: 0;
+    
+}
+
+
+
+@media (max-width:480px)  { 
+    #gl{
+        display: none;
+    }
+}
